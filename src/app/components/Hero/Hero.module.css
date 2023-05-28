@@ -1,0 +1,117 @@
+.hero_color {
+  width: 100vw;
+  height: 100vh;
+  background: #001422;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../../../public/background.png);
+}
+
+.hero_content_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25%;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 85%;
+}
+
+.hero_text {
+  font-family: var(--font-cabinet);
+  width: 25%;
+  text-align: center;
+  min-width: 400px;
+}
+
+.logo {
+  width: 25%;
+  height: auto;
+  min-width: 250px;
+}
+
+.infinite {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 52px;
+  width: 100%;
+  /* identical to box height, or 78px */
+
+  letter-spacing: -0.03em;
+}
+
+.register_now_banner {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 150%;
+  /* identical to box height, or 78px */
+
+  letter-spacing: -0.03em;
+
+  color: #121114;
+}
+
+.register_now_banner {
+  overflow: hidden;
+  display: inline-block;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.infinite_text_container {
+  width: 3750px;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: move 5s infinite linear; /* set the time to what you want of course */
+}
+
+@keyframes move {
+  to {
+    transform: translateX(-20%);
+  }
+}
+.infinite {
+  width: 750px;
+  display: flex;
+  font-size: 36px;
+  margin: 0;
+  padding-left: 0px;
+  font-family: var(--font-druk);
+}
+
+.register-now-text {
+  text-align: center;
+}
+
+.register_now_banner_container {
+  display: flex;
+  background: #00ff73;
+  align-items: center;
+  height: 70px;
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .hero_content_container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero_text {
+    width: 100%;
+    min-width: 0;
+  }
+}
